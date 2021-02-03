@@ -1,0 +1,6 @@
+<launch>
+
+    <include file="$(find ugv_bot)launch/ugvbot_world.launch" /> 
+    <include file="$(find ugv_bot)launch/ugvbot_gmapping.launch" /> 
+
+</launch>
