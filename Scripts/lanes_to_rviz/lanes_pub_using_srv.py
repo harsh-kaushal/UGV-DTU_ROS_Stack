@@ -384,7 +384,7 @@ if __name__ == '__main__':
   count = 0
   VERBOSE = False
 
-  rospy.init_node('Attempt_2_Lanes_Processor_N_Publisher', anonymous=False)
+  rospy.init_node('Lanes_Processing_N_Publishing_service', anonymous=False)
 
   flag = 1
 
