@@ -3,7 +3,7 @@
 This script creates a node which subscribes from the Odometry data (in script from EKF_filtered/Odometry)
 and calculates the length of major and minor axis of 2D pose Covariance.
 
-<img src="Images/radius.png"/>
+<img src="Images/radius.png" align="left"/>
 
 Then for RVIZ, a ellipse shaped marker is created with frame of footprint( bot base) therefore the pose is (0, 0, 0) wrt to robot.
 
