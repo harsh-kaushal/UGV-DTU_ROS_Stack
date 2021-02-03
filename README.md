@@ -7,9 +7,9 @@
 >Development of this Stack is a stepping stone for the \
 >IGVC AutoNav Challange, Oakland University, Michigan.
 >
->This is not the Complete solution for the challange but rather an attempt to understand the \
->various primitive techniques to make a self driving vehicle and to learn how the \
->Robot Operating System Environment works.
+>This is not the Complete solution for the challange but rather an attempt \
+>to understand the various primitive techniques to make a self driving vehicle \
+>and to learn how the Robot Operating System Environment works.
 
 ## Key Features !!
 Includes Custom Scripts for :
