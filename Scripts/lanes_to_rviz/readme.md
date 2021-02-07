@@ -31,7 +31,7 @@ Now this responce data is of standard compressedImage message type
 
 the responce_data is passed to Image_Processor function
 
-## Image_Processor
+## Image_Processor()
 
 >This function seperates the image data form message and does the following tasks.
 
@@ -50,14 +50,17 @@ the responce_data is passed to Image_Processor function
 
 > Before moving to the lanes to laser aspect, the final processed image is published to "/ugvbot/image_processed" topic via Img_msg_Publisher function.
 
-## laser_processor
+## laser_processor()
 
 >This function converts the lanes from the final image, to do so i used the following procedure:
 
 1. First the coordinates of all the white pixels are stored in a list called "cord" using the function whitePixelSearch.
+
 2. As these cordinates are in the image coordinate system i.e (0,0) on top left, we have to convert these wrt our bot which is at bottom mid in the image.
    Which can done by shifting the origin, but thats what noobs do. 
-   I took a step forward and converted it to polar cordinates wrt bot, that is done in the cartToPolar
+   I took a step forward and converted it to polar cordinates wrt bot, that is done in the cartToPolar function,
    if ploted it looks like
   ![](Images/polar.png)
+
+3. Now the only task left is to convert these polar distances to real world polar disrances.
 
