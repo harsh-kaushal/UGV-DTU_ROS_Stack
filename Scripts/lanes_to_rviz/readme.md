@@ -24,19 +24,13 @@ after running these scripts, type rviz in new terminal, and open the lanes_publi
 
 
 # Explanation
-script starts from main
-
-initiates a node named "Lanes_Processing_N_Publishing_service"
-
-gets into image_client function the latest image from "get_camera_image_service" server and returns the responce_data.
-
-Now this responce data is of standard compressedImage message type
-
-the responce_data is passed to Image_Processor function
+>Main initiates a node named "Lanes_Processing_N_Publishing_service",
+>which gets into image_client function to get latest image from "get_camera_image_service" server
+>and returns the responce_data. This responce data is of compressedImage msg type,
+>then the responce_data is passed to Image_Processor function
 
 ## Image_Processor()
-
->This function seperates the image data form message and does the following tasks.
+>This function seperates the image data from message and does the following tasks.
 
 1. Defines a mask and get the Region of interest using bitwise_and Operation.
   ![](Images/maskedImage.png)
@@ -71,4 +65,12 @@ the responce_data is passed to Image_Processor function
 
 ## converterForRviz()
 
+>This function works on a basic assumption that the world is flat and in an image of this type of world 
+>as we move from bottom to top the distances increases (for a purist increases exponentially with a equation of form *y = a.exp(bx)*),
+>whose coeffiecints can be found by plotting the pixel value vs actual distance curve and using a curve fitting module.
 
+1. The RCos(theta) i.e the distance in the longitudional direction is converted according to the exponential function, explained above.
+2. The RSin(theta) i.e the distance in lateral direction is not so important in the near field and a linear curve will be a fairly good approximation,
+   so it is converted linearly according to pixel to actual distances ratio.
+
+  ![](Images/actual_polar.png)
