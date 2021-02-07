@@ -38,7 +38,7 @@ the responce_data is passed to Image_Processor function
 1. Defines a mask and get the Region of interest using bitwise_and Operation.
   ![](Images/maskedImage.png)
   
-2. Next transforms(warp) the image such that the straight lanes becomes straight lines as you can see below.
+2. Next transforms(warp) the image such that the straight lanes becomes straight lines as you can see below.  \
    In a sense this is the prespective transform of the image.
   ![](Images/wrapedImage.png)
   
