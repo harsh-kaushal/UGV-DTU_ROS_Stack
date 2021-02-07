@@ -79,8 +79,8 @@
 > We take the actual_polar list, and remap the angles to needed resolution by rounding off some data,
 > then fill that data at appropriate location then pass that to datalaser_msg_publisher().
 
-                        WITH THAT ONE ITERATION OF THE LOOP IS COMPLETED
-                    THIS WILL KEEP ON RUNNING UNTIL THE SERVER IS SENDING IMAGES
+                                    WITH THAT ONE ITERATION OF THE LOOP IS COMPLETED
+                                THIS WILL KEEP ON RUNNING UNTIL THE SERVER IS SENDING IMAGES
 
 ## Note
 
