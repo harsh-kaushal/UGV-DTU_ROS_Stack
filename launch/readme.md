@@ -29,5 +29,5 @@ which should look something like this,
 - The laser comming form lanes are not used in gmapping and costmap but can be added, \
   and that is left as exercise for reader, 
   
-                         LOL !! Now you have to configure read both of these packages.. You lazy bitch.
+                         LOL !! Now you have to read & configure both of these packages.. You lazy bitch.
                                    With that said dad has some other stuff to do, Goodbye son.
