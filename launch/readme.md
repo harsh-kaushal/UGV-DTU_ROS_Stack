@@ -26,7 +26,7 @@ which should look something like this,
 
 # Note !!!
 
-- The laser comming form lanes are not used in gmapping and costmap but can be added, \
+- The laser coming from lanes are not used in gmapping and costmap but can be added, \
   and that is left as exercise for reader, 
   
                          LOL !! Now you have to read & configure both of these packages.. You lazy bitch.
