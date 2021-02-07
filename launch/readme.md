@@ -14,7 +14,12 @@
    ```
 Movebase launch file will also launch rviz with final.rivz configuration file, \
 which should look something like this,
-
+## RVIZ
   ![](Images_launch/final_config.png)
 
- 
+## NODE_GRAPH
+  ![](Images_launch/rosgraph.png)
+
+## TF_TREE
+  ![](Images_launch/frames.png)
+
