@@ -15,7 +15,8 @@ Includes Custom Scripts for :
   - Visualizing 2d postion Covariance of the Robot as an ellipse in RVIZ.
   - Converting Lanes from Camera Image to fake_laser Message to visualize in RVIZ,\
      which can also be used in gmapping, MoveBase and Costmap2d packages.
-  - Change in heading (yaw) calculation, for turning exact angles in degrees. 
+  - Change in heading (yaw) calculation, using basics of group theory (to be exact modular arithmetic), \
+     for turning exact angles in degrees. 
   - Contains a pre-build IGVC world for testing purposes.
 
 ## Initial Setup
