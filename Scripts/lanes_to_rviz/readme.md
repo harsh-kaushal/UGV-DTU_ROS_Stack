@@ -54,9 +54,9 @@
 1. First the coordinates of all the white pixels are stored in a list called "cord" using the function whitePixelSearch.
 
 2. As these cordinates are in the image coordinate system i.e (0,0) on top left, we have to convert these wrt our bot which is at bottom mid in the image.
-   Which can done by shifting the origin, but thats something a noobs will do. 
-   I took a step forward and converted it to polar cordinates wrt bot, that is done in the cartToPolar function,
-   if ploted it looks like
+   Which can done by shifting the origin, but thats something a noobs will do. \
+   I took a step forward and converted it to polar cordinates wrt bot, that is done in the cartToPolar function, \
+   if ploted it looks like.
   ![](Images/polar.png)
 
 3. Now the only task left is to convert these polar distances to real world polar disrances.
@@ -71,6 +71,6 @@
 
 1. The RCos(theta) i.e the distance in the longitudional direction is converted according to the exponential function, explained above.
 2. The RSin(theta) i.e the distance in lateral direction is not so important in the near field and a linear curve will be a fairly good approximation,
-   so it is converted linearly according to pixel to actual distances ratio.
-   if plotted it looks like
+   so it is converted linearly according to pixel to actual distances ratio. \
+   If plotted it should looks something like.
   ![](Images/actual_polar.png)
