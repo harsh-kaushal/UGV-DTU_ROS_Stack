@@ -33,15 +33,18 @@ the responce_data is passed to Image_Processor function
 
 ## Image_Processor
 
-this function seperates the image data form message and does the following tasks
+this function seperates the image data form message and does the following tasks.
 
-- Defines a mask and get the Region of interest using bitwise_and Operation
-  <img src="Images/maskedImage.png" width="250" height="250" align="left"/>
-
-- Next transforms(warp) the image such that the straight lanes becomes straight lines as you can see below
-
-- Now this image undergoes a binary thresholding for seperating the white pixels
-
-- To finally get only lanes in the image the hough transform is used.
+1. Defines a mask and get the Region of interest using bitwise_and Operation.
+<img src="Images/maskedImage.png" width="640" height="360" align="left"/>
+  \ 
+2. Next transforms(warp) the image such that the straight lanes becomes straight lines as you can see below.
+<img src="Images/wrapedImage.png" width="640" height="360" align="left"/>
+\
+3. Now this image undergoes a binary thresholding for seperating the white pixels
+<img src="Images/thresholdedImage.png" width="640" height="360" align="left"/>
+\
+4. To finally get only lanes in the image the hough transform is used.
+<img src="Images/HoughLinesImage.png" width="640" height="360"/>
 
 
