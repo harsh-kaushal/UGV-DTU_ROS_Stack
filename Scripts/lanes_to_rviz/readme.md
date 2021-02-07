@@ -8,20 +8,20 @@
 
 ## Running the scripts
 
-Start by running the camera image subscriber service by command
-```sh
-rosrun ugv_bot camera_img_service
-``` 
-next open a new terminal tab by pressing ctrl+shift+tab
-
-now run the image to laser scan script by command
-```sh
-rosrun ugv_bot lanes_pub_using_srv
-```
-after running these scripts, type rviz in new terminal, and open the lanes_publisher.rviz config file.
+- Start by running the camera image subscriber service by command
+  ```sh
+  rosrun ugv_bot camera_img_service
+  ``` 
+- next open a new terminal tab by pressing ctrl+shift+tab
+  now run the image to laser scan script by command
+  ```sh
+  rosrun ugv_bot lanes_pub_using_srv
+  ```
+- After running these scripts, type rviz in new terminal, and open the lanes_publisher.rviz config file.
   ![](Images/rviz_config.png)
-
-
+ 
+- After that your screen should look like 
+  ![](Images/rviz_final_screen.png)
 
 # Explanation
 >Main initiates a node named "Lanes_Processing_N_Publishing_service",
