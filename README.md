@@ -1,8 +1,7 @@
 # Unmanned Ground Vehicle - DTU
 <img src="Images/Slack%20Logo.png" width="250" height="250" align="right"/>
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger) [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause) 
 
 >Development of this Stack is a stepping stone for the \
 >IGVC AutoNav Challange, Oakland University, Michigan.
