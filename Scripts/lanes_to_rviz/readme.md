@@ -72,5 +72,5 @@ after running these scripts, type rviz in new terminal, and open the lanes_publi
 1. The RCos(theta) i.e the distance in the longitudional direction is converted according to the exponential function, explained above.
 2. The RSin(theta) i.e the distance in lateral direction is not so important in the near field and a linear curve will be a fairly good approximation,
    so it is converted linearly according to pixel to actual distances ratio.
-
+   if plotted it looks like
   ![](Images/actual_polar.png)
