@@ -35,7 +35,7 @@
   </node>
 
   <node pkg="rviz" type="rviz" name="rviz" 
-        args="-d $(find my_mouse)/rviz_config/movebase.rviz" >
+        args="-d $(find my_mouse)/rviz_config/final.rviz" >
   </node>
 
 </launch>
