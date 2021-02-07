@@ -41,9 +41,13 @@
   
 3. Now this image undergoes a binary thresholding for seperating the white pixels
   ![](Images/thresholdedImage.png)
-  
+    
 4. To finally get only lanes in the image the hough transform is used.
   ![](Images/HoughLinesImage.png)
+
+  you can perform erode before hough transform which will decrease the lanes width, \
+  after which hough transfrom will be less buggy.
+
 
 > Before moving to the lanes to laser aspect, the final processed image is published to "/ugvbot/image_processed" topic via Img_msg_Publisher function.
 
@@ -89,7 +93,7 @@ If there are such objects, then a workaround can be formalized :
 1. Classify these types of objects
 2. Crop out these Objects 
 3. Publish the image to the same topic at which camera publishes, \
-   with ofcourse a higher refreshrate than the camera. \
+   with of course a higher refresh-rate than the camera. \
                       or \
    You can create another topic, in that case change the topic name in the camera_img_server script.
 
