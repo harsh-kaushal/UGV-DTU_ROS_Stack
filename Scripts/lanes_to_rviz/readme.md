@@ -12,13 +12,16 @@ Start by running the camera image subscriber service by command
 ```sh
 rosrun ugv_bot camera_img_service
 ``` 
-
 next open a new terminal tab by pressing ctrl+shift+tab
 
 now run the image to laser scan script by command
 ```sh
 rosrun ugv_bot lanes_pub_using_srv
 ```
+after running these scripts, type rviz in new terminal, and open the lanes_publisher.rviz config file.
+  ![](Images/rviz_config.png)
+
+
 
 # Explanation
 script starts from main
@@ -57,10 +60,15 @@ the responce_data is passed to Image_Processor function
 1. First the coordinates of all the white pixels are stored in a list called "cord" using the function whitePixelSearch.
 
 2. As these cordinates are in the image coordinate system i.e (0,0) on top left, we have to convert these wrt our bot which is at bottom mid in the image.
-   Which can done by shifting the origin, but thats what noobs do. 
+   Which can done by shifting the origin, but thats something a noobs will do. 
    I took a step forward and converted it to polar cordinates wrt bot, that is done in the cartToPolar function,
    if ploted it looks like
   ![](Images/polar.png)
 
 3. Now the only task left is to convert these polar distances to real world polar disrances.
+
+> which is done in the converterForRviz function
+
+## converterForRviz()
+
 
