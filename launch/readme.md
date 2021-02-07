@@ -14,12 +14,20 @@
    ```
 Movebase launch file will also launch rviz with final.rivz configuration file, \
 which should look something like this,
-## RVIZ
+### RVIZ
   ![](Images_launch/final_config.png)
 
-## NODE_GRAPH
+### NODE_GRAPH
   ![](Images_launch/rosgraph.png)
 
-## TF_TREE
+### TF_TREE
   ![](Images_launch/frames.png)
 
+
+# Note !!!
+
+- The laser comming form lanes are not used in gmapping and costmap but can be added, \
+  and that is left as exercise for reader, 
+  
+                         LOL !! Now you have to configure read both of these packages.. You lazy bitch.
+                                   With that said dad has some other stuff to do, Goodbye son.
