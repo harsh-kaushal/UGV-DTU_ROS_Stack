@@ -74,3 +74,22 @@
    so it is converted linearly according to pixel to actual distances ratio.
    If plotted it should looks something like.
   ![](Images/actual_polar.png)
+  
+> Now the only thing left is to send this list of actual distances to rviz.
+> We take the actual_polar list, and remap the angles to needed resolution by rounding off some data,
+> then fill that data at appropriate location then pass that to datalaser_msg_publisher().
+
+                        WITH THAT ONE ITERATION OF THE LOOP IS COMPLETED
+                    THIS WILL KEEP ON RUNNING UNTIL THE SERVER IS SENDING IMAGES
+
+## Note
+
+Again this method assumes that the world is flat, which means there are no objects with any kind of hight in the image.
+If there are such objects, then a workaround can be formalized :
+1. Classify these types of objects
+2. Crop out these Objects 
+3. Publish the image to the same topic at which camera publishes, \
+   with ofcourse a higher refreshrate than the camera. \
+                      or \
+   You can create another topic, in that case change the topic name in the camera_img_server script.
+
