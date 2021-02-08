@@ -7,8 +7,11 @@
 
 
 ## Running the scripts
-
-- Start by running the camera image subscriber service by command
+- Launch the world using
+  ```sh
+  roslaunch ugv_bot ugvbot_world.launch
+  ```
+- Then Start the camera image subscriber service by command
   ```sh
   rosrun ugv_bot camera_img_service
   ``` 
