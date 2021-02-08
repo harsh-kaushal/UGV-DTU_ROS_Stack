@@ -18,7 +18,7 @@
 - next open a new terminal tab by pressing ctrl+shift+tab \
   now run the image to laser scan script by command
   ```sh
-  rosrun ugv_bot lanes_pub_using_srv
+  rosrun ugv_bot lanes_pub_using_srv.py
   ```
 - After running these scripts, type rviz in new terminal, and open the lanes_publisher.rviz config file.
   ![](Images/rviz_config.png)
