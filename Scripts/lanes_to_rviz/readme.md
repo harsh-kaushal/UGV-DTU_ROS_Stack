@@ -13,7 +13,7 @@
   ```
 - Then Start the camera image subscriber service by command
   ```sh
-  rosrun ugv_bot camera_img_service
+  rosrun ugv_bot camera_img_server.py
   ``` 
 - next open a new terminal tab by pressing ctrl+shift+tab \
   now run the image to laser scan script by command
