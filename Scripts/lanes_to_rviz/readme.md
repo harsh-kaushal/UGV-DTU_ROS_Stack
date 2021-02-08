@@ -91,7 +91,7 @@
 
 ## Note
 
-Again this method assumes that the world is flat, which means there are no objects with any kind of hight in the image.
+Again this method assumes that the world is flat, which means there are no objects with any kind of height in the image.
 If there are such objects, then a workaround can be formalized :
 1. Classify these types of objects
 2. Crop out these Objects 
