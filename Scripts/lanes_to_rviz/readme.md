@@ -15,7 +15,7 @@
   ```sh
   rosrun ugv_bot camera_img_service
   ``` 
-- next open a new terminal tab by pressing ctrl+shift+tab
+- next open a new terminal tab by pressing ctrl+shift+tab \
   now run the image to laser scan script by command
   ```sh
   rosrun ugv_bot lanes_pub_using_srv
