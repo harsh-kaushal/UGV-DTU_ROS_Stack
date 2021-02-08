@@ -48,8 +48,8 @@
 4. To finally get only lanes in the image the hough transform is used.
   ![](Images/HoughLinesImage.png)
 
-  you can perform erode before hough transform which will decrease the lanes width, \
-  after which hough transfrom will be less buggy.
+   you can perform erode before hough transform which will decrease the lanes width, \
+   after which hough transfrom will be less buggy.
 
 
 > Before moving to the lanes to laser aspect, the final processed image is published to "/ugvbot/image_processed" topic via Img_msg_Publisher function.
