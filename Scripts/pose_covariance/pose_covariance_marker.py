@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from __future__ import print_function   # just a fancy print, No big deal
 import os                               # For cleaning the terminal
