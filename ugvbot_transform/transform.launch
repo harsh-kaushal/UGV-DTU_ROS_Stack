@@ -9,13 +9,14 @@
 
   <!-- convert joint states to TF transforms for rviz but only for static joints -->
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"	respawn="false" output="screen">
-    <remap from="/joint_states" to="/ugvbot/robot_state"/>
+    <remap from="/joint_states" to="/ugvbot/joint_states"/>
   </node> 
 
-  <!-- convert joint states to TF transforms for rviz but only for dynamic joints (Wheels)-->
-  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >
-      <remap from="/joint_states" to="/ugvbot/robot_state"/>
-  </node> 
+  <!-- convert joint states to TF transforms for rviz but only for dynamic joints (Wheels) -->
+  <!-- When we need to remove gazebo and publish actual encoder data on joint state-->
+  <!-- <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >
+      <remap from="/joint_states" to="/ugvbot/dynamic_joint_states"/>
+  </node>  -->
 
   <!-- If using custom transfrom for RVIZ -->
   <!-- convert joint states to TF transforms for rviz, etc -->
