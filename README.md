@@ -13,6 +13,8 @@
 >This is the ROS part of the stack used to in the paper titled "Minotaur-A single lane navigation system".
 > https://ieeexplore.ieee.org/document/9738520
 
+<img src="Images/IMG-20220107-WA0026.jpeg"/>
+
 ## Key Features !!
 Includes Custom Scripts for :
   - Hardware Interface to connect ROS with Motordrivers and Encoders
