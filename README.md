@@ -13,7 +13,9 @@
 >This is the ROS part of the stack used to in the paper titled "Minotaur-A single lane navigation system".
 > https://ieeexplore.ieee.org/document/9738520
 
-<img src="Images/IMG-20220107-WA0026.jpeg"/>
+<p align="center">
+  <img src="Images/IMG-20220107-WA0022.jpeg" width="540" height="741"/>
+</p>
 
 ## Key Features !!
 Includes Custom Scripts for :
