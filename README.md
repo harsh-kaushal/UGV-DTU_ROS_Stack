@@ -12,6 +12,7 @@
 
 ## Key Features !!
 Includes Custom Scripts for :
+  - Hardware Interface to connect ROS with Motordrivers and Encoders
   - Visualizing 2d postion Covariance of the Robot as an ellipse in RVIZ.
   - Converting Lanes from Camera Image to fake_laser Message to visualize in RVIZ,\
      which can also be used in gmapping, MoveBase and Costmap2d packages.
