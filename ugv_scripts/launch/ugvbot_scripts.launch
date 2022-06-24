@@ -1,0 +1,15 @@
+<launch>
+
+    <!-- <node name="cmd_vel_executioner" pkg="ugv_scripts" type="md_sub_2.py"/>
+    <node name="Left_encoders_Read_N_Pub" pkg="ugv_scripts" type="left_encoders.py"/>
+    <node name="RIght_encoders_Read_N_Pub" pkg="ugv_scripts" type="right_encoders.py"/> -->
+
+    <!-- <node name="encoder_pub_1" pkg="ugv_scripts" type="encoder_pub_1.py"/>
+    <node name="encoder_pub_2" pkg="ugv_scripts" type="encoder_pub_2.py"/>
+    
+    <node name="js_n_ticks" pkg="ugv_scripts" type="js_n_ticks.py"/> -->
+
+    <node name="foo_encoders" pkg="ugv_scripts" type="foo_encoders.py"/>
+
+
+</launch>

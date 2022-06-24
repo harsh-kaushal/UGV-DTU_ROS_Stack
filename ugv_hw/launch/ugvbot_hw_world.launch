@@ -1,0 +1,15 @@
+<launch>
+
+  <!-- For ros control in hardware -->
+  <include file="$(find diffbot_base)/launch/diffbot.launch" />
+  
+  <!-- Filtered odometry EKF Launch file 
+  <include file="$(find ugv_bot)/ugvbot_ekf/launch/ugvbot_ekf.launch" /> 
+  -->
+  <!-- Transformations for rviz launch file   -->
+  <!-- <include file="$(find ugv_bot)/transformations/transform.launch" /> -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find ugv_hw)/robot.rviz" output="screen"/>
+  
+  <!-- For launching scripts -->
+  <!-- <include file="$(find ugv_scripts)/launch/ugvbot_scripts.launch" /> -->
+</launch>

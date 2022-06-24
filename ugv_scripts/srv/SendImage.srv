@@ -1,0 +1,6 @@
+bool data
+---
+std_msgs/Header header
+string format
+uint8[] thresh_data
+uint8[] depth_data

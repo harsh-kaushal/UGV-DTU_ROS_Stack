@@ -1,0 +1,25 @@
+<!-- https://answers.ros.org/question/221093/basic-diff_drive-question/ -->
+<!-- https://github.com/ros-controls/ros_controllers/tree/kinetic-devel/diff_drive_controller/test -->
+
+<launch>
+
+	<!-- Load robot model -->
+	<param name="robot_description" command="$(find xacro)/xacro '$(find ugv_description)/urdf/ugvbot.xacro' --inorder"/>
+
+      <node name="ugv_base_node" pkg="ugv_base" type="ugv_base_node">
+            <remap from="/joint_states" to="/ugvbot/joint_states"/>      
+      </node>
+
+      <!-- Load controller config -->
+      <rosparam command="load" file="$(find ugv_control)/config/ugvbot_hw_control.yaml"/>
+
+      <node name="controller_spawner" pkg="controller_manager" type="spawner" output="screen" 
+                  args="mobile_base_controller joint_state_controller">
+      </node>
+
+      <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"	respawn="false" output="screen">
+            <param name="robot_description" command="$(find xacro)/xacro '$(find ugv_description)/urdf/ugvbot.xacro'" />
+            <remap from="/joint_states" to="/ugvbot/joint_states"/>
+      </node>
+          
+</launch>
