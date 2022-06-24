@@ -10,6 +10,9 @@
 >to understand the various primitive techniques to make a self driving vehicle \
 >and to learn how the Robot Operating System Environment works.
 
+>This is the ROS part of the stack used to in the paper titled Minotaur-A single lane navigation system.
+> https://ieeexplore.ieee.org/document/9738520
+
 ## Key Features !!
 Includes Custom Scripts for :
   - Hardware Interface to connect ROS with Motordrivers and Encoders
