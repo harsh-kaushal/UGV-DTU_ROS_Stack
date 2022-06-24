@@ -10,8 +10,8 @@
 >to understand the various primitive techniques to make a self driving vehicle \
 >and to learn how the Robot Operating System Environment works.
 
->This is the ROS stack used to in the paper titled "Minotaur-A single lane navigation system".
->To understand the Neural Networks used, go through the paper at https://ieeexplore.ieee.org/document/9738520
+>This is the ROS stack used to in the paper titled "Minotaur - A single lane navigation system".\
+>To understand the Neural Networks used, skim through the paper at https://ieeexplore.ieee.org/document/9738520
 
 <p align="center">
   <img src="Images/IMG-20220107-WA0028.jpeg"/>
