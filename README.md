@@ -14,7 +14,7 @@
 > https://ieeexplore.ieee.org/document/9738520
 
 <p align="center">
-  <img src="Images/IMG-20220107-WA0022.jpeg" width="540" height="741"/>
+  <img src="Images/IMG-20220107-WA0028.jpeg" width="540" height="741"/>
 </p>
 
 ## Key Features !!
